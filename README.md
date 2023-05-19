@@ -2,6 +2,11 @@
 downloads posts from instagram using python requests
 instagram session ID needed
 
+# what it does 
+sends a request to the url provided, searches for "url": (image link) and "contenturl": (video link) and downloads it
+## why does it need my session ID?
+sending a request to the url provided, instagram will just respond with a login screen
+
 # how to use it (for those who are new to python):
 1. download python and set as path in the installation (3.10.9+)
 2. download the zip file and put it in a directory you want the videos to be saved in -
