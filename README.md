@@ -18,8 +18,7 @@ instagram session ID needed
 3. go to the network tab 
 ![image](https://github.com/Hecker5556/insta-post-downloader/assets/96238375/2d9dbd1b-7306-4c02-aee6-e7333635ce7a)
 4. go to dms
-5. search for this (or whatever will have ur cookies)
-![image](https://github.com/Hecker5556/insta-post-downloader/assets/96238375/b4bb6f41-e9be-4e48-9291-5dddda6dfd8e)
+5. search for this (or whatever will have ur cookies)  ![image](https://github.com/Hecker5556/insta-post-downloader/assets/96238375/b4bb6f41-e9be-4e48-9291-5dddda6dfd8e)
 
 6. right click the request and copy as curl (bash) 
 
