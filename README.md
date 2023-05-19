@@ -1,5 +1,6 @@
 # insta-post-downloader
 downloads posts from instagram using python requests
+instagram session ID needed
 
 # how to use it (for those who are new to python):
 1. download python and set as path in the installation (3.10.9+)
@@ -9,3 +10,4 @@ downloads posts from instagram using python requests
 4. type pip install requests, wait for the module to install
 5. type python main.py
 6. enjoy
+
