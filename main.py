@@ -18,15 +18,15 @@ def insta(url):
   except:
       print("failed to find content urls")
   count = 0
-  video = "funnyvideo"
+  video = "funnyvideo" #change file name to your preference
   for i in matchesvideo:
-      with open(video + str(count) + ".mp4", "wb") as f1:
+      with open(video + str(count) + ".mp4", "wb") as f1: 
          response = requests.get(i, stream=True)
          f1.write(response.content)
          print(f"downloaded {video + str(count)}")
          count += 1
   count = 0
-  image = "funnyimage"
+  image = "funnyimage" #change file name to your preference
   for i in matchesimages:
       with open(image + str(count) + ".jpg", "wb") as f1:
          response = requests.get(i)
