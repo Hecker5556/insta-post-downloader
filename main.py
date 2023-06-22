@@ -13,7 +13,6 @@ def insta(url):
   response = requests.get(url, cookies=cookies)
   response = response.text
   response = response.replace("\/", "/")
-  response = response.encode('utf-8').decode('unicode_escape')
   try:
       patternvideo = r'"contentUrl":"(.*?)","thumbnailUrl"'
       matchesvideo = re.findall(patternvideo, response)
@@ -30,6 +29,7 @@ def insta(url):
       return
   video = "funnyvideo"
   for i in matchesvideo:
+    i = i.encode('utf-8').decode('unicode_escape')
     try:
         currenttime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime())
         with open(video + currenttime + ".mp4", "wb") as f1:
@@ -40,6 +40,7 @@ def insta(url):
             print("ERROR: ", e)
   image = "funnyimage"
   for i in matchesimages:
+    i = i.encode('utf-8').decode('unicode_escape')
     try:
        currenttime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime())
        with open(image + currenttime + ".jpg", "wb") as f1:
